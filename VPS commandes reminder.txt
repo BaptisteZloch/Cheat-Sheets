@@ -1,0 +1,23 @@
+Restart Apache
+	- /etc/init.d/apache2 restart
+
+Importer fichier SQL
+	- mysql nom_base_de_donnees < fichier.sql
+
+Copier fichier local sur serveur
+	- scp -r /sourcePC user@serveur:chemin/vers/dossier/destination
+
+Lancer app Spring en continue:
+	- nohup mvn spring-boot:run &
+
+Afficher plus d'erreurs quand erreur 500: 
+	- dans php.ini chercher display_errors et le set sur On (remettre en Off après)
+
+Remplacer une chaine de caractere par une autre dans tous les fichiers
+	- sed -i 's/ANCIEN/NOUVEAU/g' *
+
+Changer mdp root:
+	- sudo passwd root
+
+
+

@@ -1,0 +1,12 @@
+Récupérer branch distante:
+	git checkout --track nom_du_remote/nom_de_la_branche
+
+Supprimer branch en local:
+	git branch -d localBranchName
+
+Supprimer branch en remote:
+	git push origin --delete remoteBranchName
+
+
+
+
