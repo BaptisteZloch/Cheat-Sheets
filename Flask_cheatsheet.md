@@ -37,3 +37,36 @@ def realisation(param):
 ```
 - To render template create a folder named templates at the projects's root then add `from flask import Flask, render_template` to app.py and for a route add `return render_template("file.html", param=value)`
 - To redirect add add `from flask import Flask, render_template` to app.py, you can redirect to another route like this `return redirect('/otherpath')`
+- To programm job you can use APScheduler from flask_apscheduler like this :
+```py
+from flask_apscheduler import APScheduler
+
+scheduler = APScheduler()
+scheduler.init_app(app)
+scheduler.start()
+
+...
+
+app.scheduler.add_job(func=function, date=datetime(AAAA/MM/DD),id=unique_id,args=[ARGS_OF_FUNCTION])
+
+```
+- To send mails you can use Mail, Message from flask_mail like this :
+```py
+from flask_mail import Mail, Message
+
+mail = Mail(app)
+msg = Message(...)
+msg.body = ...
+mail.send(msg)
+...
+
+app.scheduler.add_job(func=function, date=datetime(AAAA/MM/DD),id=unique_id,args=[ARGS_OF_FUNCTION])
+
+```
+- To handle cors use CORS from flask_cors like this : 
+```py
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app,resources=r'/api/v1/*') #Allow CORS
+```
