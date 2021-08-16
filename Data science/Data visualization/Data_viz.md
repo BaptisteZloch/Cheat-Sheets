@@ -3,3 +3,6 @@
 ## Usefull libraries
 
 - [Holoviz](https://holoviz.org/)
+- Lux
+- Atoti
+- QuickDA
