@@ -9,3 +9,7 @@
 ### Load existing model
 ### Retrain (specialize) an existing model
 ## Load tensorflow datasets
+## Model conversion
+### tflite
+### C/C++ code
+### JS code
