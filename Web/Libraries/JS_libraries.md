@@ -17,4 +17,5 @@
 - NanoID (generate random ID)
 - Passport (authentification middle ware for nodeJS)
 - CryptoJS (ease encryption process)
-
+- Mapbox GL JS (display map on web pages)
+- Helloweek (display interactive calendar)
