@@ -1,6 +1,6 @@
 # Symfony cheat sheet
 
-## Symdony commands
+## Symfony commands
 - Create a project (front & back) : `$ symfony new my_project_name --full` or only API, microservices `$ symfony new my_project_name`
 - Create class or add field to a class : `$ php bin/console make:entity`
 - Prepare migration : `$ php bin/console make:migration`
@@ -9,3 +9,68 @@
 - Create controller : `$ php bin/console make:controller ProductController`
 - Create Form : `$ php bin/console make:form`
 - Run server : `$ symfony server:start`
+
+
+## Twig
+### Block type
+#### Loop & statements
+- For loop :
+  ```twig
+  <ul>
+    {% for element in list %}
+      <li>
+      {{element}}
+      </li>
+    {% endfor %}
+  </ul>
+  ```
+  
+- if statement :
+  ```twig
+  {% if element is not null %}
+    <p>
+      {{element}}
+    </p>
+  {% else %}
+    <p>
+      {{element}}
+    </p>
+  {% endif %}
+  ```
+
+### Functions with the `|`
+### Heritage
+### Locate assets
+this asset is located in /public/css/style.css
+```twig
+<link rel="stylesheet" href="{{ asset('css/style.css') }}">
+```
+
+### URL path integration
+```twig
+<a href="{{ path('ROUTE_NAME', { URL_PARAM: A_PARAM }) }}">
+    A symfony link
+</a>
+```
+
+
+
+## Tips & tricks
+
+### Forms
+
+### Create your own SQL query
+
+In order to implement you own SQL requests add a function in the Entity repository file located in the repository folder.
+Replace `YOUR_SQL_REQUEST` with you own one. Of course as every function you can put arguments/parameters in the parenthesis.
+```php
+public function findSomething(): array
+    {
+        $conn = $this->getEntityManager()->getConnection();
+        $sql = 'YOUR_SQL_QUERY';
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+        return $stmt->fetchAllAssociative();
+    }
+```
+
