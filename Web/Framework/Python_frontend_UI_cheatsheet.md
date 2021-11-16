@@ -1,0 +1,4 @@
+- Streamlit
+- Dash pyplot
+- PysimpleWeb
+- PysimpleGUI
