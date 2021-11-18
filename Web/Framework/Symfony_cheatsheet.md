@@ -74,3 +74,6 @@ public function findSomething(): array
     }
 ```
 
+## Troushooting
+
+If you have a field that is always blank in the form even if you filled it please refere to [this](https://ourcodeworld.com/articles/read/1388/how-to-solve-symfony-5-exception-argument-1-passed-to-symfonybridgedoctrineformchoicelistidreader-getidvalue-must-be-an-object-or-null-string-given).
