@@ -1,5 +1,12 @@
 # Symfony cheat sheet
 
+## Symfony installation
+
+**For Windows**
+1. Install [WAMP](https://www.wampserver.com/), [MAMP](https://www.mamp.info/en/downloads/), [XAMPP](https://www.apachefriends.org/fr/download.html) in order to have MySQL, PHP installed
+2. Install composer by downloading it from [here](https://getcomposer.org/download/).
+3. Install Symfony by downloading it from [here](https://symfony.com/download).
+
 ## Symfony commands
 - Create a project (front & back) : `$ symfony new my_project_name --full` or only API, microservices `$ symfony new my_project_name`
 - Create class or add field to a class : `$ php bin/console make:entity`
@@ -59,6 +66,27 @@ this asset is located in /public/css/style.css
 
 ### Forms
 
+- To make datepicker as input field : 
+  ```php
+   $builder
+        ->add('Date',DateType::class,[
+            'widget' => 'single_text',
+        ]);
+  ```
+- To add a submit button directly in the form :
+  ```php
+    ...
+    ->add('save', SubmitType::class,['label'=>"Add your text"]);
+   ```
+- To implement bootstarp class to all the forms add this to `./config/packages/twig.yaml`:
+  ```yaml
+  twig:
+    ...
+    form_themes: ['bootstrap_4_layout.html.twig']
+    ...
+
+  ```
+   
 ### Create your own SQL query
 
 In order to implement you own SQL requests add a function in the Entity repository file located in the repository folder.
