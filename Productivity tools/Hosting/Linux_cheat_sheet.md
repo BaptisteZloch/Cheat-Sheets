@@ -14,4 +14,6 @@
 ## MySQL commands
 - launch mysql : `sudo mysql -p`
 - List all databases : `mysql> SHOW DATABASES;`
+- Start working with one database : `mysql> USE <database>;`
+- List all table from dtaabase : `mysql> SHOW TABLES;`
 - Add an SQL query in a database : `mysql> nom_base_de_donnees < fichier.sql`
