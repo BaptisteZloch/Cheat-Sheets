@@ -12,9 +12,9 @@
 - Where project has to be stored : `/var/www/` after installing apache
 
 ## MySQL commands
-- launch mysql : `sudo mysql -p`
+- Launch mysql : `sudo mysql -p`
 - List all databases : `mysql> SHOW DATABASES;`
 - Start working with one database : `mysql> USE <database>;`
-- List all table from dtaabase : `mysql> SHOW TABLES;`
+- List all table from database : `mysql> SHOW TABLES;`
 - Add an SQL query in a database : `mysql> nom_base_de_donnees < fichier.sql`
-- Export an sql database : `sudo mysqldump -p <database> > /home/<user>/<filename>.sql`
+- Export an sql database : `sudo mysqldump -u root -p <database> > /home/<user>/<filename>.sql` or `sudo mysql -u root -p <database>  > /home/<user>/<filename>.sql` 
