@@ -17,3 +17,4 @@
 - Start working with one database : `mysql> USE <database>;`
 - List all table from dtaabase : `mysql> SHOW TABLES;`
 - Add an SQL query in a database : `mysql> nom_base_de_donnees < fichier.sql`
+- Export an sql database : `sudo mysqldump -p <database> > /home/<user>/<filename>.sql`
