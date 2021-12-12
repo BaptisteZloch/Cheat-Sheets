@@ -5,6 +5,7 @@
 - List all files and directory in a folder : `ls`
 - Show the content of a file : `cat <filename>`
 - How to restart apache : `/etc/init.d/apache2 restart`
+- Copy file from VPS to local windows : `scp <user>@<ip_adress>:/home/<user>/<filename> /<filename>` **To run on a cmd terminal**
 
 
 ## Usefull folders
