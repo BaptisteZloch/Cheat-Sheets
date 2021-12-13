@@ -8,6 +8,7 @@
 - Show the 100 lasy lines of a file : `tail --lines=100 <filename>`
 - How to restart apache : `/etc/init.d/apache2 restart`
 - Copy file from VPS to local windows : `scp <user>@<ip_adress>:/home/<user>/<filename> /<folder>` **To run on a cmd terminal**
+- To create an empty file : `sudo touch <filename>`
 
 
 ## Usefull folders
