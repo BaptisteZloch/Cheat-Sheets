@@ -28,4 +28,4 @@
 - To disable key verification : `mysql> SET FOREIGN_KEY_CHECKS=0;` **Don't forget to reactivate it after importing data**
 - To start/restart mysql service : `systemctl restart mysql.service` or `/etc/init.d/mysql restart`
 - To stop mysql service : `systemctl stop mysql.service` or `/etc/init.d/mysql stop`
-
+- To check mysql status : `systemctl status mysql.service`
