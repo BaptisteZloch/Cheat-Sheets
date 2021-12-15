@@ -9,6 +9,7 @@
 
 ## Symfony commands
 - Create a project (front & back) : `$ symfony new my_project_name --full` or only API, microservices `$ symfony new my_project_name`
+- Create the empty database spcified in the `.env.local` file : `$ php bin/console doctrine:database:create`
 - Create class or add field to a class : `$ php bin/console make:entity`
 - Prepare migration : `$ php bin/console make:migration`
 - Run migration : `$ php bin/console doctrine:migrations:migrate`
