@@ -13,7 +13,8 @@
 - Show the 100 lasy lines of a file : `tail --lines=100 <filename>`
 ### Editing
 - To create an empty file : `sudo touch <filename>`
-- Rename file : `mv <oldfilename> <newfilename>`(it also works for folder)
+- To rename file : `mv <oldfilename> <newfilename>`(it also works for folder)
+- To copy a file into another : `cp <filename> <destination_filename>` or to copy into a folder `cp <filename> <destination_folder>`
 - To write something in a file : `echo "something" > <filename>` if you want to make \n understandable `echo "something \nsomthing else" > <filename>`
 - To edit a file : `sudo vi <filename>` or `sudo nano <filename>`
 - To replace something in a file : `sed -i -e "s/something/something else/g" <filename>`
