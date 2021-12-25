@@ -4,7 +4,7 @@
 - Launch mysql : `sudo mysql -u root -p`
 - Export an sql database : `sudo mysqldump -u root -p <database> > /home/<user>/<filename>.sql` or `sudo mysql -u root -p <database>  > /home/<user>/<filename>.sql` 
 - Export an sql table : `sudo mysqldump -u root -p <database> <table> > <table>.sql`
-- - Add an SQL query in a database : `mysql -u root -p nom_base_de_donnees < fichier.sql`
+- Add an SQL query in a database : `mysql -u root -p nom_base_de_donnees < fichier.sql`
 - To start/restart mysql service : `systemctl restart mysql.service` or `/etc/init.d/mysql restart`
 - To stop mysql service : `systemctl stop mysql.service` or `/etc/init.d/mysql stop`
 - To check mysql status : `systemctl status mysql.service`
