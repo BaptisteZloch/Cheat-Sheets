@@ -10,7 +10,7 @@
 ## Django commands
 - Installing Django : `pip install Django`
 - Creating Django project : `django-admin startproject PROJECT_NAME`
-- Creating app in a Django project : `python manage.py startapp APP_NAME` **note : always create a urls.py file into the app folder** then add `APP_NAME.apps.APP_NAMEConfig` in INSTALLED_APPS.
+- Creating app in a Django project : `python manage.py startapp APP_NAME` **note : always create a urls.py file into the app folder** then add `APP_NAME` in INSTALLED_APPS.
 - Creating superuser : `python manage.py createsuperuser` then to use the admin side add this to the urls.py file of the project :
 ```py
 from django.contrib import admin
