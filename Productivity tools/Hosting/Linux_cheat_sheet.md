@@ -26,7 +26,7 @@
 
 ## Rights commands
 - `chown`
-- To make apache to write files : `sudo chown -R www-data:www-data /var/www`
+- To give apache the rights to write files : `sudo chown -R www-data:www-data /var/www`
 - `chmod`
 
 
