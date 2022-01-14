@@ -17,7 +17,7 @@
 - Create controller : `$ php bin/console make:controller ProductController`
 - Create Form : `$ php bin/console make:form`
 - Run server : `$ symfony server:start`
-
+- Before lauching server on linux run this : `chown -R www-data:www-data var`
 
 ## Twig
 ### Block type
