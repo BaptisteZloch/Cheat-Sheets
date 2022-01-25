@@ -3,9 +3,10 @@
 ## Virtual environnement
 - Install virtual environnement : `> pip install virtualenv`
 - Create virtual environnement : `> python -m venv venv`
-- Activate virtual environnement : `> .\venv\Scripts\activate`
+- Activate virtual environnement : `> .\venv\Scripts\activate` on linux `$ source venv/bin/activate`
 - Leaving virtual environnement : `> deactivate`
 - Freezing all installed packages of a virtual (or not) environnement : `> pip freeze > requirements.txt`
+- Install requirements : `> pip install -r requirements.txt`
 
 ## Django commands
 - Installing Django : `pip install Django`
