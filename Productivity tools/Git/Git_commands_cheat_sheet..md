@@ -21,8 +21,10 @@
 - To integrate the remote modifications : `git pull origin`
 
 ## Branch
+- To change branche : `git checkout -b <branch_name>`
+- To list all branches : `git branch -a`
 - To change branche : `git checkout --track <remote_name>/<branch_name>`
-- To remove local branche : `git branch -d <local_branch_name>`
+- To remove local branch : `git branch -d <local_branch_name>`
 - To remove remote branch : `git push origin --delete <remote_branch_name>`
 
 
