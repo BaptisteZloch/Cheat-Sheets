@@ -27,6 +27,8 @@
 - To remove local branch : `git branch -d <local_branch_name>`
 - To remove remote branch : `git push origin --delete <remote_branch_name>`
 
+## Usefull links-
+- [magic tricks](https://ohshitgit.com/)
 
 
 
