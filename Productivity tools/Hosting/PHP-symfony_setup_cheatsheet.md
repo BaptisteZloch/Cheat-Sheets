@@ -57,6 +57,8 @@ You can check the mysql deamon status running or not by using this command :
 # Installing Symfony
  ```sh
  wget https://get.symfony.com/cli/installer -O - | bash
+ export PATH="$HOME/.symfony/bin:$PATH"
+
   ```
   
 Then you are ready to clone your git repository and deploy your site.
