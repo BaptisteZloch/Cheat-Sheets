@@ -57,7 +57,7 @@ You can check the mysql deamon status running or not by using this command :
 # Installing Symfony
  ```sh
  wget https://get.symfony.com/cli/installer -O - | bash
- export PATH="$HOME/.symfony/bin:$PATH"
+ mv /home/debian/.symfony/bin/symfony /usr/local/bin/symfony
 
   ```
   
