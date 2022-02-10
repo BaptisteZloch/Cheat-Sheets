@@ -105,16 +105,54 @@ Or you can call directly the function `on()` after the querySelector that takes 
   $('#myButton').on('click',{
       console.log('you clicked on that button');
       /*
-      ...
-      do something here like DOM manipulation or some Ajax requests....
-      ...      
+        ...
+        do something here like DOM manipulation or some Ajax requests....
+        ...      
       */
   });
 ```
 Here the exemple is when the HTML element button with `id='myButton'` is clicked. However there are a lot of functions such as `dblclick, hover, keyup, change...`. You can find a list [here](https://www.w3schools.com/jquery/jquery_ref_events.asp).
-## Ajax & Requests
 
+## Ajax & Requests
+### GET request
+Get requests are one of the most HTTP request used. In jQuery it worls by calling jQuery object with `$` then by calling `get()` function. This function takes as first argument the **url** to server in a string, then the data you want to send to the server, it will generate url as `/url/to/the/server?param1=value1&param2=value2`. The third argument is the function (also known as callback) to execute when a result is returned. The last argument is the MIME type that the function expect from the result of the server.
+```javascript
+  $.get("/url/to/the/server", {"key1" : "value1","hello":"world"}, function(data, status){
+    console.log('you send a request to the server.\nIt returned the data : '+data='\nThe status : '+status);
+    /*
+      ...
+      do something with the data...
+      ...      
+    */
+  },'xml'); //or json, text...
+```
+
+### GetJSON request
+GetJSON method in jQuery is quite the same as the GET method but specialised in the JSON parsing. In jQuery it worls by calling jQuery object with `$` then by calling `getJSON()` function. This function takes as first argument the **url** to server in a string, then the data you want to send to the server. The third argument is the function (also known as callback) to execute when a result is returned with success.
+```javascript
+  $.getJSON("/url/to/the/server", {"key1" : "value1","hello":"world"}, function(data, status){
+    console.log('you send a request to the server.\nIt returned the data : '+data='\nThe status : '+status);
+    /*
+      ...
+      do something with the data...
+      ...      
+    */
+  });
+```
+
+### POST request
 
 ```javascript
 
 ```
+
+
+### Async request
+
+```javascript
+
+```
+
+
+
+
