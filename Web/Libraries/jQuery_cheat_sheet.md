@@ -2,6 +2,7 @@
 
 
 ## Call DOM elements
+This part could be called **querySelector**.
 ### Call by ID
 To call an element you have to add an id to the HTML element. Like this :
 ```html
@@ -83,13 +84,34 @@ To change the style you have to first call an element by **XPath**, **class**, *
 Here all the paragraphs will be written in large format and in yellow.
 
 ## Event Listener
-
-
+If you want to trigger some action when events happen, use event listner. jQuery provides a lot of function you have to call after a querySelector. You have 2 choices :
+### Simple Trigger
+#### 1. Using the method natively
+You can call directly the function on the event right after the querySelector. The function takes as input only the function (also called a **callback**) to execute when event occurs.
 ```javascript
-
+  $('#myButton').click({
+      console.log('you clicked on that button');
+      /*
+      ...
+      do something here like DOM manipulation or some Ajax requests....
+      ...      
+      */
+  });
 ```
-
-
+Here the exemple is when the HTML element button with `id='myButton'` is clicked. However there are a lot of functions such as `dblclick(), hover(), keyup()...`. Yo ucan find a list [here](https://www.w3schools.com/jquery/jquery_ref_events.asp).
+#### 2. Using the method in a string
+Or you can call directly the function `on()` after the querySelector that takes as input a string with the event and a second input the function (also called a **callback**) to execute when event occurs.
+```javascript
+  $('#myButton').on('click',{
+      console.log('you clicked on that button');
+      /*
+      ...
+      do something here like DOM manipulation or some Ajax requests....
+      ...      
+      */
+  });
+```
+Here the exemple is when the HTML element button with `id='myButton'` is clicked. However there are a lot of functions such as `dblclick, hover, keyup, change...`. You can find a list [here](https://www.w3schools.com/jquery/jquery_ref_events.asp).
 ## Ajax & Requests
 
 
