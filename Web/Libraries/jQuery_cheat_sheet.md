@@ -113,6 +113,44 @@ Or you can call directly the function `on()` after the querySelector that takes 
 ```
 Here the exemple is when the HTML element button with `id='myButton'` is clicked. However there are a lot of functions such as `dblclick, hover, keyup, change...`. You can find a list [here](https://www.w3schools.com/jquery/jquery_ref_events.asp).
 
+### Getting value
+#### From Select
+Sometimes you want to get the value of a select element when it changes. So you first have to attach an event listener `change` to the select with the `id='MySelect'`. Then get the value of that select by calling `this.value`.
+```html
+  <select id='MySelect'>
+        <option selected disabled>--Choose an option--</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+  </select>
+```
+```javascript
+  $('#MySelect').on('change', function (e) {
+          let valueSelected = this.value;
+          console.log(valueSelected); //will print the value of the value attribut
+   });
+```
+#### From Checkbox
+Sometimes you want to change something when a checkbox is checked or not. So you first have to attach an event listener `change` to the select with the `id='MyCheckBox'`. Then get the attribut by calling `this.checked`.
+```html
+  <input type='checkbox' id='MyCheckBox'>
+```
+```javascript
+  $('#MyCheckBox').on('change', function (e) {
+          let checkedOrNot = this.checked;
+          console.log(checkedOrNot); //will print the value of the checked attribut true or false
+   });
+```
+#### From an element
+If you want to get a value of an HTML element such as a span, a paragraph, ... You have to first call the querySelect for that element, then call the function `val()` to get the value.
+```html
+  <span id='MySpan'>Hello Span</span>
+```
+```javascript
+  let spanValue = $('#MySpan').val();
+  console.log(spanValue); //will display Hello Span in the console
+```
+
 ## Ajax & Requests
 ### GET request
 Get requests are one of the most HTTP request used. In jQuery it worls by calling jQuery object with `$` then by calling `get()` function. This function takes as first argument the **url** to server in a string, then the data you want to send to the server, it will generate url as `/url/to/the/server?param1=value1&param2=value2`. The third argument is the function (also known as callback) to execute when a result is returned. The last argument is the MIME type that the function expect from the result of the server.
