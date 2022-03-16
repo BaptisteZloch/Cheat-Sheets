@@ -47,6 +47,10 @@
 
 ## Others
 - Copy file from VPS to local windows : `scp <user>@<ip_adress>:/home/<user>/<filename> /<folder>` **To run on a cmd terminal**
-- To a command's instructions (manuel) : `man <command_name>`
+
+## Help on commands
+- `apropos <command_name>`
+- `whatis <command_name>`
+- `man <command_name>`
 - To locate where a command come from : `where <command_name>`
 - To see if a command is shell or alias : `type <command_name>`
