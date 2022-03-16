@@ -57,4 +57,4 @@
 
 ## Links
 - Hardlink = same data area : `ln <file_one> <file_two>`
-- Softlink = like a pointer to the original data, like a shortcut : `ln -s <original_file> <shortcut_file>
+- Softlink = like a pointer to the original data, like a shortcut : `ln -s <original_file> <shortcut_file>`
