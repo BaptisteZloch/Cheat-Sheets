@@ -54,3 +54,7 @@
 - `man <command_name>`
 - To locate where a command come from : `where <command_name>`
 - To see if a command is shell or alias : `type <command_name>`
+
+## Links
+- Hardlink = same data area : `ln <file_one> <file_two>`
+- Softlink = like a pointer to the original data, like a shortcut : `ln -s <original_file> <shortcut_file>
