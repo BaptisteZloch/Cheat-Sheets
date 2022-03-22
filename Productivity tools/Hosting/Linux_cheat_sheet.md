@@ -30,6 +30,7 @@
 - To list current processus and branches : `pstree pach` in order to identify hierarchy
 - To list background jobs (on terminal not deamon) : `jobs`
 - To make the process background to foreground : `fg <process_number>`
+- To make the process foreground to background : `fg <process_number>`
 
 ## User commands
 - To create a user : `sudo adduser <username>`
