@@ -28,6 +28,7 @@
 - To check partition and IO consumption : `iostats -p`
 - To list top usage of IO : `iotop`
 - To list current processus and branches : `pstree pach` in order to identify hierarchy
+- To list deamonized jobs : `jobs`
 
 ## User commands
 - To create a user : `sudo adduser <username>`
