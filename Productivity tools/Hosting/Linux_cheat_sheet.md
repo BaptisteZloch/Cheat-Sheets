@@ -19,15 +19,15 @@
 - To edit a file : `sudo vi <filename>` or `sudo nano <filename>`
 - To replace something in a file : `sed -i -e "s/something/something else/g" <filename>`
 
-## Process commands
+## Process & Network commands
 - To see ports and running : `netstat -an | grep LISTEN`
 - To see current process : `ps -edf` to locate one process `ps -edf | grep <process_name>`
+- To see other current process : `ps -aux` to locate one process `ps -aux | grep <process_name>`
 - To see current process : `top` Q (to quit)
 
 ## User commands
 - To create a user : `sudo adduser <username>`
 - To add user to sudo : `sudo adduser <username> sudo`
-- 
 
 
 ## Rights commands
