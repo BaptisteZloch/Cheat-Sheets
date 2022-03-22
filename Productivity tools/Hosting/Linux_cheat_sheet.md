@@ -24,6 +24,7 @@
 - To see current process : `ps -edf` to locate one process `ps -edf | grep <process_name>`
 - To see other current process : `ps -aux` to locate one process `ps -aux | grep <process_name>`
 - To see current process : `top` Q (to quit)
+- To list current processus and branches : `pstree pach` in order to identify hierarchy
 
 ## User commands
 - To create a user : `sudo adduser <username>`
