@@ -40,3 +40,16 @@ app.post('/addUser', jsonParser, async (req, res) => {
     return res.status(201).json({message: 'user created'});})
 })
 ```
+## Tricks
+- To get parameter from the request (get):
+```js
+req.query.<variable_name>
+```
+- To render html
+```js 
+app.use(express.static("public")); //to server static files
+```
+or
+```js
+res.sendFile(path.join(__dirname, "public/index.html"));
+```
