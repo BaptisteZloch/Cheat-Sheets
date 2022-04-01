@@ -18,3 +18,10 @@
 - List all table from database : `mysql> SHOW TABLES;`
 - To disable key verification : `mysql> SET FOREIGN_KEY_CHECKS=0;` **Don't forget to reactivate it after importing data**
 
+## Users
+```sql
+CREATE USER '<user_name>'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON * . * TO '<user_name>'@'localhost';
+FLUSH PRIVILEGES;
+```
+
