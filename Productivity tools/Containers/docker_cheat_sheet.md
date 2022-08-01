@@ -26,6 +26,9 @@ sudo usermod -aG docker ${USER}
 ### Stop a container
 `docker stop <containers_Id>`
 
+### Get the container IP on the bridge docker default network
+`docker inspect <containers_name> | grep IPAddress`
+
 ## Images
 ### Pull an image
 `docker pull <official_image>:<tag>`
