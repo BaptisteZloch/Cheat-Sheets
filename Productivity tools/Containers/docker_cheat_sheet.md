@@ -35,3 +35,6 @@ sudo usermod -aG docker ${USER}
 
 ### List docker images
 `docker image ls`
+
+### Remove none tag images
+`docker rmi $(docker images -f "dangling=true" -q)`
